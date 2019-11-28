@@ -6,10 +6,15 @@
   "repository": {
     "url": "https://github.com/sqlanywhere/node-sqlanywhere"
   },
+  "files": [
+    "lib",
+    "index.d.ts"
+  ],
   "main": "./lib/index",
   "engines": {
     "node": ">=0.10"
   },
+  "types": "index.d.ts",
   "scripts": {
     "install": "node build.js"
   },
