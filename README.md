@@ -1,3 +1,7 @@
+
+# for boxed
+- the reason we created a fork is that current versions of `sqlanywhere` only work with node 10 or 12. if new versions come up that support node v14+ this private package can  be replaced again with the original one.
+
 # node-sqlanywhere
 This is a Node.js driver written for [SAP SQL Anywhere](http://www.sap.com/pc/tech/database/software/sybase-sql-anywhere/index.html).
 
