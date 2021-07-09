@@ -10,7 +10,7 @@ export interface SybaseConnection {
         cb: (err: Error | undefined) => void
     ): void;
     close(cb: (err?: Error) => void): void;
-    disconnect(cb: (err?: Error) => void): void;
+    disconnect(cb?: (err?: Error) => void): void;
     connected(): boolean;
     exec(query: string, cb: (err: Error | undefined, result: any) => void): void;
     exec(
@@ -28,7 +28,7 @@ export interface SybaseConnection {
 }
 
 export interface ConnectionParameters {
-    Server: string;
+    Server?: string;
     UserId: string;
     DatabaseFile?: string;
     AutoStart?: string;
